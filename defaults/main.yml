@@ -1,6 +1,6 @@
 ---
 # General config.
-gitlab_external_url: "https://gitlab/"
+gitlab_external_url: "https://gitlab.cherubits.hu/"
 gitlab_git_data_dir: "/var/opt/gitlab/git-data"
 gitlab_edition: "gitlab-ce"
 gitlab_version: ''
@@ -13,18 +13,18 @@ gitlab_ssl_certificate: "/etc/gitlab/ssl/gitlab.crt"
 gitlab_ssl_certificate_key: "/etc/gitlab/ssl/gitlab.key"
 
 # SSL Self-signed Certificate Configuration.
-gitlab_create_self_signed_cert: "true"
+gitlab_create_self_signed_cert: "false"
 gitlab_self_signed_cert_subj: "/C=US/ST=Missouri/L=Saint Louis/O=IT/CN=gitlab"
 
 # LDAP Configuration.
-gitlab_ldap_enabled: "false"
-gitlab_ldap_host: "example.com"
-gitlab_ldap_port: "389"
+gitlab_ldap_enabled: "true"
+gitlab_ldap_host: "cherubits.hu"
+gitlab_ldap_port: "636"
 gitlab_ldap_uid: "sAMAccountName"
 gitlab_ldap_method: "plain"
-gitlab_ldap_bind_dn: "CN=Username,CN=Users,DC=example,DC=com"
-gitlab_ldap_password: "password"
-gitlab_ldap_base: "DC=example,DC=com"
+gitlab_ldap_bind_dn: "CN=admin,CN=accounts,DC=cherubits,DC=hu"
+gitlab_ldap_password: "qwe123"
+gitlab_ldap_base: "DC=cherubits,DC=hu"
 
 # SMTP Configuration
 gitlab_smtp_enable: "false"
