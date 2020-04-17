@@ -28,4 +28,4 @@
       when: ansible_os_family == 'RedHat'
 
   roles:
-    - role: lordoftheflies.gitlab
+    - role: lordoftheflies.ansible_role_gitlab
