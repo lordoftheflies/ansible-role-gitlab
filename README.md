@@ -1,6 +1,6 @@
 # Ansible Role: GitLab
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-gitlab.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-gitlab)
+[![Build Status](https://travis-ci.org/lordoftheflies/ansible_role_gitlab.svg?branch=master)](https://travis-ci.org/lordoftheflies/ansible_role_gitlab)
 
 Installs GitLab, a Ruby-based front-end to Git, on any RedHat/CentOS or Debian/Ubuntu linux system.
 
@@ -134,7 +134,7 @@ None.
       vars_files:
         - vars/main.yml
       roles:
-        - { role: geerlingguy.gitlab }
+        - { role: lordoftheflies.ansible_role_gitlab }
 
 *Inside `vars/main.yml`*:
 
