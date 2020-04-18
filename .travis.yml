@@ -6,13 +6,34 @@ env:
   global:
     - ROLE_NAME: ansible_role_gitlab
   matrix:
-#    - MOLECULE_DISTRO: centos7
+    - MOLECULE_DISTRO: centos6
+      MOLECULE_PLAYBOOK: playbook-version.yml
+    - MOLECULE_DISTRO: centos7
+      MOLECULE_PLAYBOOK: playbook-version.yml
+#    - MOLECULE_DISTRO: centos8
+#      MOLECULE_PLAYBOOK: playbook-version.yml
+    - MOLECULE_DISTRO: debian8
+      MOLECULE_PLAYBOOK: playbook-version.yml
+    - MOLECULE_DISTRO: debian9
+      MOLECULE_PLAYBOOK: playbook-version.yml
+    - MOLECULE_DISTRO: debian10
+      MOLECULE_PLAYBOOK: playbook-version.yml
+    - MOLECULE_DISTRO: fedora27
+      MOLECULE_PLAYBOOK: playbook-version.yml
+    - MOLECULE_DISTRO: fedora29
+      MOLECULE_PLAYBOOK: playbook-version.yml
+    - MOLECULE_DISTRO: fedora30
+      MOLECULE_PLAYBOOK: playbook-version.yml
+    - MOLECULE_DISTRO: fedora31
+      MOLECULE_PLAYBOOK: playbook-version.yml
+    - MOLECULE_DISTRO: ubuntu1204
+      MOLECULE_PLAYBOOK: playbook-version.yml
+#    - MOLECULE_DISTRO: ubuntu1404
+#      MOLECULE_PLAYBOOK: playbook-version.yml
+    - MOLECULE_DISTRO: ubuntu1604
+      MOLECULE_PLAYBOOK: playbook-version.yml
     - MOLECULE_DISTRO: ubuntu1804
-#    - MOLECULE_DISTRO: debian9
-#    - MOLECULE_DISTRO: centos7
-#      MOLECULE_PLAYBOOK: playbook-version.yml
-#    - MOLECULE_DISTRO: ubuntu1804
-#      MOLECULE_PLAYBOOK: playbook-version.yml
+      MOLECULE_PLAYBOOK: playbook-version.yml
 
 install:
   # Install test dependencies.
