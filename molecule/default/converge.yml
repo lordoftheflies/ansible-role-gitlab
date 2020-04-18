@@ -18,4 +18,4 @@
         state: absent
 
   roles:
-    - role: lordoftheflies.gitlab
+    - role: ansible_role_gitlab
